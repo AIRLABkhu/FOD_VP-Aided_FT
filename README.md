@@ -7,6 +7,10 @@ A guide of Pytorch implementation of "Fisheye Object Detection with Visual Promp
 - Python 3.9.16
 - Pytorch 2.0.1
 
+### Pretrained Backbone
+Based on YOLOX-l, we replace the original backbone in YOLOX (YOLOX-Darknet53) with VGG19, ResNet50, and DenseNet121 respectively.
+Download Backbone pretrained weight at 'https://github.com/IN2-ViAUn/Exploration-of-Potential'
+
 ### Dataset
 Download WoodScape dataset at 'https://woodscape.valeo.com/woodscape/download'
 
