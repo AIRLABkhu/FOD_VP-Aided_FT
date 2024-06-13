@@ -1,6 +1,25 @@
-# FOD_VP-Aided_FT
- 
-A guide of Pytorch implementation of "Fisheye Object Detection with Visual Prompting-Aided Finetuning".
+# Fisheye Object Detection with Visual Prompting-Aided Fine-tuning
+
+A guide of Pytorch implementation of "[Fisheye Object Detection with Visual Prompting-Aided Finetuning](https://github.com/AIRLABkhu/FOD_VP-Aided_FT)" (remote sensing).
+
+### Abstract
+> Fisheye cameras play a crucial role in various fields by offering a wide field of view, enabling the capture of expansive areas within a single frame.
+Nonetheless, the radial distortion characteristics of fisheye lenses lead to notable shape deformation, particularly at the edges of the image, posing a significant challenge for accurate object detection.
+In this paper, we introduce a novel method, `VP-aided fine-tuning', which harnesses the strengths of the pretraining--fine-tuning paradigm augmented by visual prompting (VP) to bridge the domain gap between undistorted standard datasets and distorted fisheye image datasets.
+Our approach involves two key elements: the use of VPs to effectively adapt a pretrained model to the fisheye domain, and a detailed 24-point regression of objects to fit the unique distortions of fisheye images.
+This 24-point regression accurately defines the object boundaries and substantially reduces the impact of environmental noise.
+The proposed method was evaluated against existing object detection frameworks on fisheye images, demonstrating superior performance and robustness. 
+Experimental results also showed performance improvements with the application of VP, regardless of the variety of fine-tuning method applied.
+
+### Architecture
+![Architecture](./figures/f1.png)
+
+### Experiments
+![benchmark1](./figures/f2.png)  
+![benchmark2](./figures/f3.png)
+
+
+## Usage
 
 ### Environment
 - Ubuntu 18.04.6 LTS
@@ -35,4 +54,20 @@ $ python get_iou.py -f load_eval/yolox_24p_eval.py -w {model_weight}.pt -p {vali
 
 ```bash
 $ python get_iou.py -f load_eval/yolox_24p_eval.py -w {model_weight}.pt -w_p {prompt_weight}.pt
+```
+
+
+## Citation
+If you use this code in your paper, please consider citing this ```BibTeX``` entry.
+```
+@article{jeon2024fisheye,
+  title={Fisheye Object Detection with Visual Prompting-Aided Fine-Tuning},
+  author={Jeon, Minwoo and Park, Gyeong-Moon and Hwang, Hyoseok},
+  journal={Remote Sensing},
+  volume={16},
+  number={12},
+  pages={2054},
+  year={2024},
+  publisher={MDPI}
+}
 ```
