@@ -1,6 +1,6 @@
 # Fisheye Object Detection with Visual Prompting-Aided Fine-tuning
 
-A guide of Pytorch implementation of "[Fisheye Object Detection with Visual Prompting-Aided Finetuning](https://github.com/AIRLABkhu/FOD_VP-Aided_FT)" (remote sensing).
+A guide of Pytorch implementation of "[Fisheye Object Detection with Visual Prompting-Aided Finetuning](https://www.mdpi.com/2076-3417/12/9/4288)" (remote sensing).
 
 ### Abstract
 > Fisheye cameras play a crucial role in various fields by offering a wide field of view, enabling the capture of expansive areas within a single frame.
@@ -15,7 +15,9 @@ Experimental results also showed performance improvements with the application o
 ![Architecture](./figures/f1.png)
 
 ### Experiments
+#### Benchmark
 ![benchmark1](./figures/f2.png)  
+#### Qualitative results
 ![benchmark2](./figures/f3.png)
 
 
